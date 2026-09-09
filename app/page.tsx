@@ -17,9 +17,8 @@ export const metadata: Metadata = {
   description:
     "MOLA Motion builds marketing foundations for B2B SaaS companies without a full marketing team. Starts with a paid audit. Senior strategy, AI production.",
   openGraph: {
-    title: "MOLA Motion: Marketing foundations for B2B SaaS",
-    description:
-      "Every engagement starts with a paid audit. Senior strategy, AI-driven production, startup pricing.",
+    title: "MOLA Motion",
+    description: "Enterprise marketing for a startup budget.",
     type: "website",
     images: [
       {
