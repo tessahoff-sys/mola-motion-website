@@ -330,9 +330,9 @@ export default function Home() {
               "It means no engagement starts until a paid diagnostic has assessed the state of your marketing foundations. The audit costs €1,500 for startups and €2,500 for scaleups, takes five working days, and produces a recommendation document that decides what comes next. You don't commit to anything beyond the audit until you've read the output.",
           },
           {
-            question: "How is this different from hiring a fractional CMO?",
+            question: "How is this different from hiring a marketing manager?",
             answer:
-              "A fractional CMO is a senior hire priced accordingly, typically €5,000–15,000 per month. MOLA Motion delivers the same strategic quality at a price an early-stage company can carry, by pairing senior judgment with AI agents on production. The audit-first model also means you know exactly what you're buying before any ongoing commitment.",
+              "A full-time marketing manager is a fixed cost year-round, typically €5,000–7,000 per month once salary, benefits, and overhead are included, whether or not there's enough work to fill their time. MOLA Motion means paying only for what's actually needed: senior strategy and judgment applied through AI-driven production, without carrying a full-time hire. The audit-first model also means you know exactly what you're buying before any ongoing commitment.",
           },
           {
             question: "Do you work with companies outside Europe?",
