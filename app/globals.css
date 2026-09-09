@@ -1,26 +1,102 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Brand palette — MOLA Motion Brand Guidelines v1.1 (updated) */
+  /* Zinc — mark, wordmark, body text only. Not for large surfaces; see Slate below. */
+  --color-zinc-50: #fafafa;
+  --color-zinc-100: #e1e1e1;
+  --color-zinc-200: #c8c8c9;
+  --color-zinc-300: #afafb0;
+  --color-zinc-400: #979798;
+  --color-zinc-500: #7e7e7f;
+  --color-zinc-600: #656567;
+  --color-zinc-700: #4c4c4e;
+  --color-zinc-800: #333336;
+  --color-zinc-950: #18181b;
+
+  --color-sienna-400: #e8967e;
+  --color-burnt-sienna: #c05a3a;
+
+  /* Slate — design surfaces: backgrounds, cards, dark-mode sections. Never buttons/CTAs. */
+  --color-charcoal: #32363d;
+  --color-slate-700: #5d6167;
+  --color-slate-500: #85878c;
+  --color-slate-300: #b2b4b8;
+  --color-slate-100: #d9dbde;
+
+  --font-jakarta: var(--font-plus-jakarta-sans);
+  --font-dm-sans: var(--font-dm-sans);
+  --font-space-mono: var(--font-space-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--color-zinc-50);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-zinc-50);
+  color: var(--color-zinc-950);
+}
+
+.bg-dot-grid {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Hero murmuration — triangles roaming the banner in loose, flocking paths,
+   each spinning on its own axis as it travels. The literal nod to "Motion". */
+@keyframes hero-murmur-1 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  22%  { transform: translate(22vw, -14vh) rotate(130deg); }
+  48%  { transform: translate(6vw, -30vh) rotate(250deg); }
+  74%  { transform: translate(-16vw, -10vh) rotate(320deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+@keyframes hero-murmur-2 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  28%  { transform: translate(-20vw, 12vh) rotate(-110deg); }
+  55%  { transform: translate(4vw, 24vh) rotate(-230deg); }
+  80%  { transform: translate(18vw, 6vh) rotate(-310deg); }
+  100% { transform: translate(0, 0) rotate(-360deg); }
+}
+
+@keyframes hero-murmur-3 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  20%  { transform: translate(14vw, 10vh) rotate(70deg); }
+  46%  { transform: translate(-18vw, -8vh) rotate(190deg); }
+  72%  { transform: translate(8vw, -20vh) rotate(280deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+@keyframes hero-murmur-4 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  25%  { transform: translate(-12vw, -18vh) rotate(-90deg); }
+  50%  { transform: translate(-24vw, 4vh) rotate(-200deg); }
+  78%  { transform: translate(-4vw, 16vh) rotate(-300deg); }
+  100% { transform: translate(0, 0) rotate(-360deg); }
+}
+
+@keyframes hero-murmur-5 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  30%  { transform: translate(16vw, -8vh) rotate(150deg); }
+  60%  { transform: translate(20vw, 14vh) rotate(260deg); }
+  85%  { transform: translate(-6vw, 8vh) rotate(330deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+.hero-murmur-1, .hero-murmur-2, .hero-murmur-3, .hero-murmur-4, .hero-murmur-5 {
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.hero-murmur-1 { animation-name: hero-murmur-1; }
+.hero-murmur-2 { animation-name: hero-murmur-2; }
+.hero-murmur-3 { animation-name: hero-murmur-3; }
+.hero-murmur-4 { animation-name: hero-murmur-4; }
+.hero-murmur-5 { animation-name: hero-murmur-5; }
+
+@media (prefers-reduced-motion: reduce) {
+  [class*="hero-murmur-"] {
+    animation: none;
+  }
 }
