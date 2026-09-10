@@ -29,3 +29,27 @@ export const FOOTER_NAV_ITEMS = [
 export const CTA_PRIMARY = { label: "Start with the audit", href: "/audit" } as const;
 export const CTA_SECONDARY = { label: "See how it works", href: "/how-it-works" } as const;
 export const CTA_PASSIVE = { label: "Read the blog", href: "/blog" } as const;
+
+// Dutch (NL) mirrors — same structure, translated labels, /nl-prefixed hrefs.
+// Kept alongside the English constants rather than in a dictionary abstraction,
+// matching how every page's copy is written directly in JSX, not pulled from keys.
+export const NAV_ITEMS_NL = [
+  { label: "Hoe het werkt", href: "/nl/how-it-works" },
+  { label: "Prijzen", href: "/nl/pricing" },
+  { label: "Over ons", href: "/nl/about" },
+  { label: "Fractional CMO", href: "/nl/fractional-cmo" },
+  { label: "Blog", href: "/nl/blog" },
+] as const;
+
+export const FOOTER_NAV_ITEMS_NL = [
+  { label: "Hoe het werkt", href: "/nl/how-it-works" },
+  { label: "Prijzen", href: "/nl/pricing" },
+  { label: "Over ons", href: "/nl/about" },
+  { label: "Fractional CMO", href: "/nl/fractional-cmo" },
+  { label: "Veelgestelde vragen", href: "/nl/faq" },
+  { label: "Blog", href: "/nl/blog" },
+] as const;
+
+export const CTA_PRIMARY_NL = { label: "Begin met de audit", href: "/nl/audit" } as const;
+export const CTA_SECONDARY_NL = { label: "Bekijk hoe het werkt", href: "/nl/how-it-works" } as const;
+export const CTA_PASSIVE_NL = { label: "Lees de blog", href: "/nl/blog" } as const;

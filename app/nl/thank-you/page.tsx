@@ -4,8 +4,8 @@ import { Label } from "@/components/Label";
 import { SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "We've got it",
-  description: "Your audit enquiry landed. We'll confirm your start date within one working day.",
+  title: "Binnen",
+  description: "Je auditaanvraag is binnen. We bevestigen je startdatum binnen één werkdag.",
   alternates: {
     languages: {
       en: `${SITE_URL}/thank-you`,
@@ -15,20 +15,20 @@ export const metadata: Metadata = {
 };
 
 const steps = [
-  "You'll hear from us within one working day with a confirmed start date and a Stripe payment link.",
-  "Once payment is confirmed, we'll send the interview prep questions and schedule the founder interview.",
-  "Five working days from kickoff, the strategic baseline note lands in your inbox.",
+  "Je hoort binnen één werkdag van ons met een bevestigde startdatum en een betaallink.",
+  "Zodra de betaling bevestigd is, sturen we de voorbereidende interviewvragen en plannen we het founder-interview.",
+  "Vijf werkdagen na de start landt de strategische baseline note in je inbox.",
 ];
 
-export default function ThankYou() {
+export default function ThankYouNL() {
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-xl px-6 py-28 text-center">
         <h1 className="font-dm-sans font-semibold text-3xl md:text-4xl text-zinc-950">
-          We&apos;ve got it.
+          Binnen.
         </h1>
         <p className="font-dm-sans text-base leading-relaxed text-zinc-950/80 mt-6">
-          Your audit enquiry landed. We&apos;ll confirm your start date within one working day.
+          Je auditaanvraag is binnen. We bevestigen je startdatum binnen één werkdag.
         </p>
 
         <div className="text-left mt-14 flex flex-col gap-6">
@@ -41,8 +41,8 @@ export default function ThankYou() {
         </div>
 
         <div className="mt-14">
-          <Button href="/blog" variant="text-sienna">
-            While you wait, read the blog →
+          <Button href="/nl/blog" variant="text-sienna">
+            Lees in de tussentijd de blog →
           </Button>
         </div>
       </div>

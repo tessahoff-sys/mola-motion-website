@@ -3,12 +3,18 @@ import { Button } from "@/components/Button";
 import { Label } from "@/components/Label";
 import { FaqList, type FaqItem } from "@/components/FaqList";
 import { Triangle } from "@/components/Triangle";
-import { CTA_PRIMARY } from "@/lib/site-config";
+import { CTA_PRIMARY, SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Frequently asked questions",
   description:
-    "Answers to common questions about MOLA Motion: the audit, the model, pricing, and how this compares to a fractional CMO or agency.",
+    "Answers to common questions about MOLA Motion: the audit, the model, pricing, and how this compares to hiring in-house or an agency.",
+  alternates: {
+    languages: {
+      en: `${SITE_URL}/faq`,
+      nl: `${SITE_URL}/nl/faq`,
+    },
+  },
   openGraph: {
     title: "MOLA Motion FAQ: the audit, pricing, and how the model works",
     description: "Answers to the most common questions about working with MOLA Motion.",
@@ -61,9 +67,9 @@ const groups: { category: string; items: FaqItem[] }[] = [
     category: "Comparing alternatives",
     items: [
       {
-        question: "How is this different from a fractional CMO?",
+        question: "How is this different from hiring a marketing manager?",
         answer:
-          "A fractional CMO is typically engaged for a minimum of two to three days per week at €5,000–15,000 per month. That's appropriate for companies past the point where a foundations-first model applies. MOLA Motion is structured for companies that need foundations built before they need leadership in place.",
+          "A full-time marketing manager is a fixed cost year-round, typically €5,000–7,000 per month once salary, benefits, and overhead are included, whether or not there's enough work to fill their time. MOLA Motion is structured for companies that need foundations built first, then charges only for what's actually needed.",
       },
       {
         question: "How is this different from a traditional agency?",

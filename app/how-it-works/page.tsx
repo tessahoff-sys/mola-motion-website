@@ -5,11 +5,18 @@ import { DetailBox } from "@/components/DetailBox";
 import { Faq } from "@/components/Faq";
 import { Triangle } from "@/components/Triangle";
 import { BigNumeral } from "@/components/BigNumeral";
+import { SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "How MOLA Motion works: audit, foundations, subscription",
   description:
     "Every engagement starts with a 5-day paid audit. Then foundations. Then the subscription. Here's exactly how each step works and what you get.",
+  alternates: {
+    languages: {
+      en: `${SITE_URL}/how-it-works`,
+      nl: `${SITE_URL}/nl/how-it-works`,
+    },
+  },
   openGraph: {
     title: "How MOLA Motion works: the three-step model",
     description:
@@ -182,20 +189,21 @@ export default function HowItWorks() {
               </span>
             </p>
             <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-4">
-              A couple of the terms on the left, spelled out: a voice note is a short reference
-              for how you should sound in writing, tone, words to avoid, examples in your own
-              words. A messaging starter (or, at scaleup tier, a full messaging architecture)
-              turns positioning into the actual lines you use on the site, in sales, and in
-              content. The website and content pieces come last, once the words underneath them
-              are locked.
+              A couple of terms spelled out: a voice note is a short reference for how you
+              should sound in writing, tone, words to avoid, examples in your own words. A
+              messaging starter (or, at scaleup tier, a full messaging architecture) turns
+              positioning into the actual lines you use on the site, in sales, and in content.
+              The website and content pieces come last, once the words underneath them are
+              locked.
             </p>
             <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-4">
-              At startup tier, everything on the left is built together with you, across two
-              weeks of working sessions, not handed over afterward as a stack of documents.
+              At startup tier, everything in the Foundations Sprint is built together with you,
+              across two weeks of working sessions, not handed over afterward as a stack of
+              documents.
             </p>
             <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-4">
-              At scaleup tier, each deliverable on the left is scoped and sequenced by the audit,
-              then built and delivered on its own timeline, not bundled into a single sprint.
+              At scaleup tier, each deliverable is scoped and sequenced by the audit, then built
+              and delivered on its own timeline, not bundled into a single sprint.
             </p>
             <div className="mt-6">
               <Button href="/pricing" variant="text-sienna">
@@ -222,8 +230,8 @@ export default function HowItWorks() {
               Here, it runs last. Once foundations hold, the subscription runs the engine:{" "}
               <span className="font-semibold text-zinc-950">
                 we keep publishing content, make sure people can find you on Google and in AI
-                answers like ChatGPT, keep an eye on competitors, and send you a plain update on
-                what&apos;s working every month.
+                answers like ChatGPT, Gemini, and Claude, keep an eye on competitors, and send
+                you a plain update on what&apos;s working every month.
               </span>{" "}
               It starts only once foundations are built, never in parallel while content is
               already publishing on positioning that hasn&apos;t been tested.

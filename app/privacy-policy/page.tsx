@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { CONTACT_EMAIL } from "@/lib/site-config";
+import { CONTACT_EMAIL, SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Privacy policy",
+  alternates: {
+    languages: {
+      en: `${SITE_URL}/privacy-policy`,
+      nl: `${SITE_URL}/nl/privacy-policy`,
+    },
+  },
 };
 
 export default function PrivacyPolicy() {

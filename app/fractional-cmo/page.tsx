@@ -4,12 +4,18 @@ import { Label } from "@/components/Label";
 import { DetailBox } from "@/components/DetailBox";
 import { Faq } from "@/components/Faq";
 import { Triangle } from "@/components/Triangle";
-import { CTA_PRIMARY, CONTACT_EMAIL } from "@/lib/site-config";
+import { CTA_PRIMARY, CONTACT_EMAIL, SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Fractional CMO and communications strategy",
   description:
     "Fractional CMO and communications advisory for B2B SaaS since 2022, part of a marketing career that began in 2004. For companies above €10M ARR that need senior leadership without a full-time hire.",
+  alternates: {
+    languages: {
+      en: `${SITE_URL}/fractional-cmo`,
+      nl: `${SITE_URL}/nl/fractional-cmo`,
+    },
+  },
   openGraph: {
     title: "MOLA Motion: Fractional CMO and communications strategy",
     description:
@@ -153,7 +159,7 @@ export default function FractionalCMO() {
           {
             question: "How many hours per week does a fractional CMO engagement involve?",
             answer:
-              "Scoped per engagement, typically one to three days per week. Some companies need a CMO presence for specific windows (a fundraise, a relaunch, a market entry) rather than an ongoing arrangement. Both are available.",
+              "Scoped per engagement, typically one to three days per week, though full-time engagements are also available. Some companies need a CMO presence for specific windows (a fundraise, a relaunch, a market entry) rather than an ongoing arrangement. Both are available.",
           },
           {
             question: "Can the communications work be short-term rather than ongoing?",
@@ -163,7 +169,7 @@ export default function FractionalCMO() {
           {
             question: "Do you work with companies outside B2B SaaS for these engagements?",
             answer:
-              "More flexible on category than the audit-first model, my experience is concentrated in B2B SaaS, but strategic leadership and communications work applies more broadly. Worth a conversation.",
+              "Yes. My most recent experience is in B2B SaaS, but I've worked across many industries. That experience carries over well, and a new market or product is quick to pick up because of it.",
           },
         ]}
       />

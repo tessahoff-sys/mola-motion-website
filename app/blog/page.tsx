@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 import { BlogFilter } from "@/components/BlogFilter";
 import { Triangle } from "@/components/Triangle";
 import { POSTS } from "@/lib/blog";
+import { SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Marketing insights for B2B SaaS founders",
   description:
     "Ideas, frameworks, and analysis for B2B SaaS founders building their marketing foundations. Positioning, ICP, messaging, GTM, and more.",
+  alternates: {
+    languages: {
+      en: `${SITE_URL}/blog`,
+      nl: `${SITE_URL}/nl/blog`,
+    },
+  },
   openGraph: {
     title: "MOLA Motion blog: B2B SaaS marketing foundations",
     description: "Positioning, ICP, messaging, GTM. Written for founders doing it themselves.",

@@ -5,12 +5,18 @@ import { DetailBox } from "@/components/DetailBox";
 import { Faq } from "@/components/Faq";
 import { Triangle } from "@/components/Triangle";
 import { PullQuote } from "@/components/PullQuote";
-import { CTA_PRIMARY } from "@/lib/site-config";
+import { CTA_PRIMARY, SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "About MOLA Motion: who built it and why",
   description:
     "MOLA Motion was built by a marketer with 20+ years in B2B SaaS positioning and GTM. Here's the story behind the audit-first, AI-production model.",
+  alternates: {
+    languages: {
+      en: `${SITE_URL}/about`,
+      nl: `${SITE_URL}/nl/about`,
+    },
+  },
   openGraph: {
     title: "About MOLA Motion: who's behind it and why",
     description: "Built by a senior B2B SaaS marketer. Audit-first, AI-production model. Here's why it exists.",
@@ -90,6 +96,7 @@ export default function About() {
       <section className="relative bg-zinc-50 border-t border-zinc-950/10 overflow-hidden">
         <Triangle className="absolute top-1/2 -translate-y-1/2 -left-10 w-40 h-40 text-zinc-950/[0.04] -rotate-6" />
         <div className="relative mx-auto max-w-2xl px-6 py-20 text-center">
+          <Label color="sienna" className="block mb-3">Client example</Label>
           <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/85">
             VIBOR is a workflow orchestration platform for freight and logistics. When we started,
             they knew how to build the product but couldn&apos;t articulate the value clearly

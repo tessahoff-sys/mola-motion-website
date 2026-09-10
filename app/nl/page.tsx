@@ -10,11 +10,11 @@ import { IconAuditFirst } from "@/components/IconAuditFirst";
 import { IconSeniorAI } from "@/components/IconSeniorAI";
 import { IconFoundations } from "@/components/IconFoundations";
 import { StageMarker } from "@/components/StageMarker";
-import { CTA_PRIMARY, CTA_SECONDARY, SITE_URL } from "@/lib/site-config";
+import { CTA_PRIMARY_NL, CTA_SECONDARY_NL, SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: { absolute: "MOLA Motion" },
-  description: "Enterprise marketing for a startup budget.",
+  description: "Enterprise marketing voor een startupbudget.",
   alternates: {
     languages: {
       en: SITE_URL,
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "MOLA Motion",
-    description: "Enterprise marketing for a startup budget.",
+    description: "Enterprise marketing voor een startupbudget.",
     type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "MOLA Motion: Marketing foundations for B2B SaaS",
+        alt: "MOLA Motion: Marketingfoundations voor B2B SaaS",
       },
     ],
   },
@@ -65,15 +65,15 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "MOLA Motion",
-  description: "Marketing production agency for B2B SaaS companies without a full marketing team.",
-  url: SITE_URL,
+  description: "Marketing productiebureau voor B2B SaaS-bedrijven zonder volledig marketingteam.",
+  url: `${SITE_URL}/nl`,
   logo: `${SITE_URL}/logo/MOLA_icon_dark.png`,
   foundingDate: "2026",
   areaServed: "Europe",
-  serviceType: ["Marketing audit", "Marketing foundations", "Content marketing"],
+  serviceType: ["Marketingaudit", "Marketingfoundations", "Contentmarketing"],
 };
 
-export default function Home() {
+export default function HomeNL() {
   return (
     <>
       <script
@@ -100,26 +100,26 @@ export default function Home() {
         ))}
         <div className="relative mx-auto max-w-4xl px-6 py-24 md:py-32 text-center flex flex-col items-center">
           <h1 className="font-jakarta font-bold uppercase text-[36px] md:text-[48px] leading-[1.1] tracking-tight">
-            You know what you built.
+            Jij weet wat je gebouwd hebt.
             <br />
-            The market doesn&apos;t.
+            De markt nog niet.
           </h1>
           <p className="font-dm-sans text-base md:text-lg leading-relaxed text-white/80 mt-8 max-w-2xl">
-            MOLA Motion is a marketing production agency for B2B SaaS companies at two stages:
-            founders with 1–2 customers building toward Series A, and scaleups at €1–10M ARR
-            without a full marketing team. Every engagement starts with a paid audit that decides
-            what to build. Not a retainer. Not a pitch dressed as strategy.
+            MOLA Motion is een marketing productiebureau voor B2B SaaS-bedrijven in twee fasen:
+            founders met 1–2 klanten op weg naar Series A, en scale-ups met €1–10M ARR zonder
+            eigen marketingteam. Elk traject begint met een betaalde audit die bepaalt wat er
+            gebouwd moet worden. Geen retainer. Geen verkooppraatje vermomd als strategie.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-10">
             <Button
-              href={CTA_PRIMARY.href}
+              href={CTA_PRIMARY_NL.href}
               variant="primary"
               className="!bg-charcoal !text-white hover:!bg-charcoal/90"
             >
-              {CTA_PRIMARY.label} →
+              {CTA_PRIMARY_NL.label} →
             </Button>
-            <Button href={CTA_SECONDARY.href} variant="ghost-dark">
-              {CTA_SECONDARY.label} →
+            <Button href={CTA_SECONDARY_NL.href} variant="ghost-dark">
+              {CTA_SECONDARY_NL.label} →
             </Button>
           </div>
         </div>
@@ -128,9 +128,9 @@ export default function Home() {
       {/* Category claim bar — narrow centred, white background */}
       <section className="bg-white">
         <div className="mx-auto max-w-2xl px-6 py-16 text-center">
-          <Label color="sienna">What we do</Label>
+          <Label color="sienna">Wat we doen</Label>
           <p className="font-dm-sans text-base md:text-lg text-zinc-950 mt-3">
-            Enterprise marketing for a startup budget.
+            Enterprise marketing voor een startupbudget.
           </p>
         </div>
       </section>
@@ -141,48 +141,48 @@ export default function Home() {
           <div>
             <Label color="sienna">Startup tier</Label>
             <h2 className="font-dm-sans font-semibold text-2xl md:text-3xl text-zinc-950 mt-3">
-              Pre-Series A founders with 1–2 customers
+              Pre-Series A founders met 1–2 klanten
             </h2>
             <StageMarker
               position={0.15}
-              startLabel="First customers"
+              startLabel="Eerste klanten"
               endLabel="€10M ARR"
               className="mt-5 max-w-xs"
             />
             <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-6">
-              You know what you built and why it matters. The words aren&apos;t sharp yet. The
-              website doesn&apos;t reflect what you actually do. You&apos;re closing customers on
-              relationships but can&apos;t replicate it consistently. We build what you need with
-              you, in two weeks.
+              Je weet wat je gebouwd hebt en waarom het ertoe doet. De woorden zijn nog niet
+              scherp. De website weerspiegelt niet wat je écht doet. Je sluit klanten via
+              relaties, maar kunt dat niet consistent herhalen. We bouwen wat je nodig hebt samen
+              met jou, in twee weken.
             </p>
-            <Label color="grey" className="block mt-6">From €1,500</Label>
+            <Label color="grey" className="block mt-6">Vanaf €1.500</Label>
             <div className="mt-6">
-              <Button href={CTA_SECONDARY.href} variant="text-sienna">
-                {CTA_SECONDARY.label} →
+              <Button href={CTA_SECONDARY_NL.href} variant="text-sienna">
+                {CTA_SECONDARY_NL.label} →
               </Button>
             </div>
           </div>
           <div>
             <Label color="sienna">Scaleup tier</Label>
             <h2 className="font-dm-sans font-semibold text-2xl md:text-3xl text-zinc-950 mt-3">
-              B2B SaaS at €1–10M ARR without a marketing team
+              B2B SaaS met €1–10M ARR zonder marketingteam
             </h2>
             <StageMarker
               position={0.7}
-              startLabel="First customers"
+              startLabel="Eerste klanten"
               endLabel="€10M ARR"
               className="mt-5 max-w-xs"
             />
             <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-6">
-              Marketing is inconsistent. Positioning is scattered across channels. You&apos;re
-              getting leads but the wrong ones. You know you need senior marketing support but
-              can&apos;t justify a full-time hire yet. The audit tells you what to build. Then we
-              build it, in the right order.
+              Marketing is inconsistent. Positionering is verspreid over kanalen. Je krijgt leads,
+              maar de verkeerde. Je weet dat je senior marketingondersteuning nodig hebt, maar
+              kunt een fulltime aanname nog niet verantwoorden. De audit vertelt je wat je moet
+              bouwen. Daarna bouwen we het, in de juiste volgorde.
             </p>
-            <Label color="grey" className="block mt-6">From €2,500</Label>
+            <Label color="grey" className="block mt-6">Vanaf €2.500</Label>
             <div className="mt-6">
-              <Button href={CTA_SECONDARY.href} variant="text-sienna">
-                {CTA_SECONDARY.label} →
+              <Button href={CTA_SECONDARY_NL.href} variant="text-sienna">
+                {CTA_SECONDARY_NL.label} →
               </Button>
             </div>
           </div>
@@ -195,44 +195,47 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x md:divide-burnt-sienna relative">
             <div className="md:pr-10 relative">
               <BigNumeral n={1} className="absolute -top-3 right-2 text-5xl text-zinc-950/[0.06] md:block hidden" />
-              <Label color="grey">Step 01 · 5 working days</Label>
-              <h3 className="font-dm-sans font-semibold text-xl text-zinc-950 mt-3">The audit.</h3>
+              <Label color="grey">Stap 01 · 5 werkdagen</Label>
+              <h3 className="font-dm-sans font-semibold text-xl text-zinc-950 mt-3">De audit.</h3>
               <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-4">
-                One founder interview. We assess positioning, ICP, messaging, GTM, website, and
-                existing materials. What comes back is a paid document, not a proposal, that
-                tells you what&apos;s broken and what to build first.
+                Één founder-interview. We beoordelen positionering, ICP, messaging, GTM, website
+                en bestaand materiaal. Wat terugkomt is een betaald document dat je vertelt wat er
+                niet klopt en wat je eerst moet bouwen.
               </p>
-              <Label color="grey" className="block mt-4">€1,500 startup / €2,500 scaleup</Label>
+              <Label color="grey" className="block mt-4">€1.500 startup / €2.500 scaleup</Label>
               <Triangle className="hidden md:block absolute top-1/2 -right-3 -translate-y-1/2 w-6 h-6 text-burnt-sienna z-10" />
             </div>
             <div className="md:px-10 relative">
               <BigNumeral n={2} className="absolute -top-3 right-2 text-5xl text-zinc-950/[0.06] md:block hidden" />
-              <Label color="grey">Step 02 · 2 weeks or modular</Label>
+              <Label color="grey">Stap 02 · 2 weken of modulair</Label>
               <h3 className="font-dm-sans font-semibold text-xl text-zinc-950 mt-3">
-                The foundations.
+                De foundations.
               </h3>
               <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-4">
-                Startup tier: a 2-week co-built sprint. Positioning, ICP, messaging, GTM, website,
-                content starter. Scaleup tier: separate deliverables, scoped by the audit,
-                delivered in the right order.
+                Startup tier: een sprint van 2 weken, samen gebouwd. Positionering, ICP, messaging,
+                GTM, website, content starter.
+              </p>
+              <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-2">
+                Scaleup tier: losse deliverables, bepaald door de audit, geleverd in de juiste
+                volgorde.
               </p>
               <Triangle className="hidden md:block absolute top-1/2 -right-3 -translate-y-1/2 w-6 h-6 text-burnt-sienna z-10" />
             </div>
             <div className="md:pl-10 relative">
               <BigNumeral n={3} className="absolute -top-3 right-2 text-5xl text-zinc-950/[0.06] md:block hidden" />
-              <Label color="grey">Step 03 · Ongoing</Label>
+              <Label color="grey">Stap 03 · Doorlopend</Label>
               <h3 className="font-dm-sans font-semibold text-xl text-zinc-950 mt-3">
-                The subscription.
+                Het abonnement.
               </h3>
               <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-4">
-                Content, SEO, competitor monitoring, strategy. Minimum three to six months. Runs
-                on top of foundations that were built right.
+                Content, SEO, concurrentiemonitoring, strategie. Minimaal drie tot zes maanden.
+                Draait op foundations die goed zijn neergezet.
               </p>
             </div>
           </div>
           <div className="text-center mt-12">
-            <Button href="/pricing" variant="text-sienna">
-              See what each tier includes →
+            <Button href="/nl/pricing" variant="text-sienna">
+              Bekijk wat elke tier omvat →
             </Button>
           </div>
         </div>
@@ -244,34 +247,35 @@ export default function Home() {
           <div>
             <IconAuditFirst className="block mx-auto w-36 h-36 text-burnt-sienna mb-6" />
             <h3 className="font-dm-sans font-semibold text-xl text-zinc-950">
-              Audit-first, not retainer-first.
+              Audit-first, geen retainer-first.
             </h3>
             <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-4">
-              You don&apos;t commit to more until you know what you need. The audit is the first
-              transaction. It decides what comes next. Not a sales process dressed up as
-              analysis.
+              Je verbindt je aan niets totdat je weet wat je nodig hebt. De audit is de eerste
+              transactie. Die bepaalt wat er hierna komt.
             </p>
           </div>
           <div>
             <IconSeniorAI className="block mx-auto w-36 h-36 text-burnt-sienna mb-6" />
             <h3 className="font-dm-sans font-semibold text-xl text-zinc-950">
-              Senior judgment. AI production.
+              Senior inzicht. AI-productie.
             </h3>
             <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-4">
-              20+ years in B2B SaaS positioning and go-to-market runs strategy, tone of voice, and
-              every judgment call on your account. AI agents handle drafting, research,
-              monitoring, and content production. That split is what makes the pricing possible.
+              20+ jaar ervaring in B2B SaaS-positionering en go-to-market stuurt de strategie,
+              tone of voice en elke beslissing op jouw account. AI-agents nemen onderzoek,
+              monitoring en contentproductie voor hun rekening. Die verdeling maakt de prijs
+              mogelijk.
             </p>
           </div>
           <div>
             <IconFoundations className="block mx-auto w-36 h-36 text-burnt-sienna mb-6" />
             <h3 className="font-dm-sans font-semibold text-xl text-zinc-950">
-              Foundations before the engine.
+              Foundations voor de motor.
             </h3>
             <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-4">
-              Positioning, ICP, messaging, GTM. Built sharp before content starts publishing.
-              Most early-stage companies skip this and wonder why the marketing doesn&apos;t
-              convert. We don&apos;t start the subscription until the foundations hold.
+              Positionering, ICP, messaging, GTM. Scherp neergezet voordat er content gepubliceerd
+              wordt. De meeste jonge bedrijven slaan dit over en vragen zich af waarom de
+              marketing niet converteert. We starten het abonnement niet voordat de foundations
+              staan.
             </p>
           </div>
         </div>
@@ -281,20 +285,20 @@ export default function Home() {
       <section className="relative bg-zinc-50 border-t border-zinc-950/10 overflow-hidden">
         <Triangle className="absolute top-1/2 -translate-y-1/2 -right-10 w-48 h-48 text-zinc-950/[0.04] rotate-6" />
         <div className="relative mx-auto max-w-2xl px-6 py-20 text-center">
-          <Label color="sienna">Client signal</Label>
+          <Label color="sienna">Klantsignaal</Label>
           <h3 className="font-dm-sans font-semibold text-2xl text-zinc-950 mt-3">
-            VIBOR: From built to explainable
+            VIBOR: van gebouwd naar verteld
           </h3>
           <div className="mt-4 flex justify-center">
             <PullQuote className="text-left">
-              &quot;The product was ready. The story wasn&apos;t yet.&quot;
+              &quot;Het product was klaar. Het verhaal nog niet.&quot;
             </PullQuote>
           </div>
           <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-5">
-            VIBOR is a workflow orchestration platform for freight and logistics. Before the
-            sprint, positioning shifted depending on who was in the room, which is normal when a
-            founder team is heads-down building the product itself. Now one narrative runs
-            through the site, the sales deck, and everything published under it.
+            VIBOR is een workflow-orchestratieplatform voor freight en logistiek. Vóór de sprint
+            verschoof de positionering afhankelijk van wie er in de kamer zat, normaal wanneer een
+            foundersteam vooral bezig is met het bouwen van het product zelf. Nu loopt er één
+            verhaal door de website, de sales deck en alles wat daaronder gepubliceerd wordt.
           </p>
           <Label color="grey" className="block mt-6">Startup tier · Foundations sprint</Label>
         </div>
@@ -305,18 +309,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-dot-grid text-zinc-950/[0.06]" />
         <div className="relative mx-auto max-w-2xl px-6 py-20 text-center">
           <h2 className="font-dm-sans font-semibold text-2xl md:text-3xl text-zinc-950">
-            Start with five days.
+            Begin met vijf dagen.
           </h2>
           <p className="font-dm-sans text-[15px] leading-relaxed text-zinc-950/80 mt-5">
-            The audit tells you what to build. One conversation, five working days. Everything
-            else runs in the background.
+            De audit vertelt je wat je moet bouwen. Één gesprek, vijf werkdagen. Al de rest
+            gebeurt op de achtergrond.
           </p>
           <div className="mt-8">
             <Link
-              href={CTA_PRIMARY.href}
+              href={CTA_PRIMARY_NL.href}
               className="inline-flex items-center justify-center gap-2 font-jakarta font-bold uppercase text-sm tracking-wide bg-charcoal text-white px-6 py-3 hover:bg-charcoal/90 transition-colors"
             >
-              {CTA_PRIMARY.label} →
+              {CTA_PRIMARY_NL.label} →
             </Link>
           </div>
         </div>
@@ -325,24 +329,24 @@ export default function Home() {
       <Faq
         items={[
           {
-            question: "What is MOLA Motion?",
+            question: "Wat is MOLA Motion?",
             answer:
-              "MOLA Motion is a marketing production agency for B2B SaaS companies at two stages: founders with 1–2 customers building toward Series A, and scaleups at €1–10M ARR without a full marketing team. Every engagement starts with a paid audit that assesses positioning, ICP, messaging, GTM, and website, then recommends what to build first.",
+              "MOLA Motion is een marketing productiebureau voor B2B SaaS-bedrijven in twee fasen: founders met 1–2 klanten op weg naar Series A, en scale-ups met €1–10M ARR zonder eigen marketingteam. Elk traject begint met een betaalde audit die positionering, ICP, messaging, GTM en website beoordeelt, en aanbeveelt wat er eerst gebouwd moet worden.",
           },
           {
-            question: "What does “audit-first” mean?",
+            question: "Wat betekent “audit-first”?",
             answer:
-              "It means no engagement starts until a paid diagnostic has assessed the state of your marketing foundations. The audit costs €1,500 for startups and €2,500 for scaleups, takes five working days, and produces a recommendation document that decides what comes next. You don't commit to anything beyond the audit until you've read the output.",
+              "Het betekent dat geen traject start voordat een betaalde diagnose de staat van je marketingfoundations heeft beoordeeld. De audit kost €1.500 voor startups en €2.500 voor scale-ups, duurt vijf werkdagen, en levert een adviesdocument op dat bepaalt wat er hierna komt. Je verbindt je aan niets voorbij de audit totdat je de uitkomst hebt gelezen.",
           },
           {
-            question: "How is this different from hiring a marketing manager?",
+            question: "Wat is het verschil met het aannemen van een marketingmanager?",
             answer:
-              "A full-time marketing manager is a fixed cost year-round, typically €5,000–7,000 per month once salary, benefits, and overhead are included, whether or not there's enough work to fill their time. MOLA Motion means paying only for what's actually needed: senior strategy and judgment applied through AI-driven production, without carrying a full-time hire. The audit-first model also means you know exactly what you're buying before any ongoing commitment.",
+              "Een fulltime marketingmanager is een vaste kostenpost het hele jaar door, meestal €5.000–7.000 per maand inclusief salaris, secundaire voorwaarden en overhead, of er nu genoeg werk is om die tijd te vullen of niet. Bij MOLA Motion betaal je alleen voor wat er echt nodig is: senior strategie en inzicht, toegepast via AI-gedreven productie, zonder een fulltime aanname. Het audit-first model betekent ook dat je precies weet wat je koopt voordat je je aan iets doorlopends verbindt.",
           },
           {
-            question: "Do you work with companies outside Europe?",
+            question: "Werken jullie ook met bedrijven buiten Europa?",
             answer:
-              "The primary ICP is English-speaking Europe (Benelux, DACH, Nordics, UK), but MOLA Motion works with B2B SaaS companies anywhere that match the stage profile. All engagements run remotely.",
+              "De primaire ICP is Engelstalig Europa (Benelux, DACH, Noordse landen, VK), maar MOLA Motion werkt met B2B SaaS-bedrijven overal die passen bij het faseprofiel. Alle trajecten verlopen op afstand.",
           },
         ]}
       />

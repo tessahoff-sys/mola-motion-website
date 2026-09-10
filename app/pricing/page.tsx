@@ -6,12 +6,18 @@ import { DeliverableList } from "@/components/DeliverableList";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { Faq } from "@/components/Faq";
 import { Triangle } from "@/components/Triangle";
-import { CTA_PRIMARY } from "@/lib/site-config";
+import { CTA_PRIMARY, SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "What you get, and what it costs",
   description:
     "Every deliverable at every stage, with the price next to it. Startup audit €1,500. Scaleup audit €2,500. Foundations Sprint €2,500. Subscription from €1,500/month.",
+  alternates: {
+    languages: {
+      en: `${SITE_URL}/pricing`,
+      nl: `${SITE_URL}/nl/pricing`,
+    },
+  },
   openGraph: {
     title: "MOLA Motion: what you get, and what it costs",
     description:
