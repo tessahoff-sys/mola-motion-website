@@ -37,7 +37,7 @@ const serviceJsonLd = {
       name: "Startup audit",
       price: "1500",
       priceCurrency: "EUR",
-      description: "5-daagse marketingaudit voor pre-Series A B2B SaaS founders",
+      description: "5-daagse marketingaudit voor jonge B2B SaaS founders",
     },
     {
       "@type": "Offer",
@@ -51,7 +51,7 @@ const serviceJsonLd = {
       name: "Startup Foundations Sprint",
       price: "2500",
       priceCurrency: "EUR",
-      description: "Sprint van 2 weken, samen gebouwd, voor pre-Series A B2B SaaS founders",
+      description: "Sprint van 2 weken, samen gebouwd, voor jonge B2B SaaS founders",
     },
   ],
 };
@@ -443,7 +443,7 @@ export default function PricingNL() {
           <ComparisonTable
             columns={["Startup tier", "Scaleup tier"]}
             rows={[
-              { label: "Fase", values: ["Pre-Series A, 1–2 klanten", "€1–10M ARR"] },
+              { label: "Fase", values: ["1–2 klanten", "€1–10M ARR"] },
               { label: "Teamgrootte", values: ["1–5, founder doet marketing", "5–50, één generalist of founder"] },
               { label: "Audit", values: ["€1.500", "€2.500"] },
               { label: "Foundations", values: ["€2.500 vast (Sprint)", "Bepaald per deliverable, typisch €8.000–15.000"] },

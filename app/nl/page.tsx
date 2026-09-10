@@ -106,9 +106,9 @@ export default function HomeNL() {
           </h1>
           <p className="font-dm-sans text-base md:text-lg leading-relaxed text-white/80 mt-8 max-w-2xl">
             MOLA Motion is een marketing productiebureau voor B2B SaaS-bedrijven in twee fasen:
-            founders met 1–2 klanten op weg naar Series A, en scale-ups met €1–10M ARR zonder
-            eigen marketingteam. Elk traject begint met een betaalde audit die bepaalt wat er
-            gebouwd moet worden. Geen retainer. Geen verkooppraatje vermomd als strategie.
+            founders met 1–2 klanten, en scale-ups met €1–10M ARR zonder eigen marketingteam.
+            Elk traject begint met een betaalde audit die bepaalt wat er gebouwd moet worden.
+            Geen retainer. Geen verkooppraatje vermomd als strategie.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-10">
             <Button
@@ -141,7 +141,7 @@ export default function HomeNL() {
           <div>
             <Label color="sienna">Startup tier</Label>
             <h2 className="font-dm-sans font-semibold text-2xl md:text-3xl text-zinc-950 mt-3">
-              Pre-Series A founders met 1–2 klanten
+              Founders met 1–2 klanten
             </h2>
             <StageMarker
               position={0.15}
@@ -331,7 +331,7 @@ export default function HomeNL() {
           {
             question: "Wat is MOLA Motion?",
             answer:
-              "MOLA Motion is een marketing productiebureau voor B2B SaaS-bedrijven in twee fasen: founders met 1–2 klanten op weg naar Series A, en scale-ups met €1–10M ARR zonder eigen marketingteam. Elk traject begint met een betaalde audit die positionering, ICP, messaging, GTM en website beoordeelt, en aanbeveelt wat er eerst gebouwd moet worden.",
+              "MOLA Motion is een marketing productiebureau voor B2B SaaS-bedrijven in twee fasen: founders met 1–2 klanten, en scale-ups met €1–10M ARR zonder eigen marketingteam. Elk traject begint met een betaalde audit die positionering, ICP, messaging, GTM en website beoordeelt, en aanbeveelt wat er eerst gebouwd moet worden.",
           },
           {
             question: "Wat betekent “audit-first”?",

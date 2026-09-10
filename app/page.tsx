@@ -106,9 +106,9 @@ export default function Home() {
           </h1>
           <p className="font-dm-sans text-base md:text-lg leading-relaxed text-white/80 mt-8 max-w-2xl">
             MOLA Motion is a marketing production agency for B2B SaaS companies at two stages:
-            founders with 1–2 customers building toward Series A, and scaleups at €1–10M ARR
-            without a full marketing team. Every engagement starts with a paid audit that decides
-            what to build. Not a retainer. Not a pitch dressed as strategy.
+            founders with 1–2 customers, and scaleups at €1–10M ARR without a full marketing
+            team. Every engagement starts with a paid audit that decides what to build. Not a
+            retainer. Not a pitch dressed as strategy.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-10">
             <Button
@@ -141,7 +141,7 @@ export default function Home() {
           <div>
             <Label color="sienna">Startup tier</Label>
             <h2 className="font-dm-sans font-semibold text-2xl md:text-3xl text-zinc-950 mt-3">
-              Pre-Series A founders with 1–2 customers
+              Founders with 1–2 customers
             </h2>
             <StageMarker
               position={0.15}
@@ -327,7 +327,7 @@ export default function Home() {
           {
             question: "What is MOLA Motion?",
             answer:
-              "MOLA Motion is a marketing production agency for B2B SaaS companies at two stages: founders with 1–2 customers building toward Series A, and scaleups at €1–10M ARR without a full marketing team. Every engagement starts with a paid audit that assesses positioning, ICP, messaging, GTM, and website, then recommends what to build first.",
+              "MOLA Motion is a marketing production agency for B2B SaaS companies at two stages: founders with 1–2 customers, and scaleups at €1–10M ARR without a full marketing team. Every engagement starts with a paid audit that assesses positioning, ICP, messaging, GTM, and website, then recommends what to build first.",
           },
           {
             question: "What does “audit-first” mean?",

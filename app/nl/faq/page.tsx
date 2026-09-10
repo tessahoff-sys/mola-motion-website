@@ -29,7 +29,7 @@ const groups: { category: string; items: FaqItem[] }[] = [
       {
         question: "Wat is MOLA Motion?",
         answer:
-          "MOLA Motion is een marketing productiebureau voor B2B SaaS-bedrijven in twee fasen: founders met 1–2 klanten op weg naar Series A, en scale-ups met €1–10M ARR zonder eigen marketingteam. Elk traject begint met een betaalde audit die positionering, ICP, messaging, GTM, website en sales enablement beoordeelt, en aanbeveelt wat er eerst gebouwd moet worden.",
+          "MOLA Motion is een marketing productiebureau voor B2B SaaS-bedrijven in twee fasen: founders met 1–2 klanten, en scale-ups met €1–10M ARR zonder eigen marketingteam. Elk traject begint met een betaalde audit die positionering, ICP, messaging, GTM, website en sales enablement beoordeelt, en aanbeveelt wat er eerst gebouwd moet worden.",
       },
       {
         question: "Wat betekent “marketing productiebureau”?",

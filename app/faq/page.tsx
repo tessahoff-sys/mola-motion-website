@@ -29,7 +29,7 @@ const groups: { category: string; items: FaqItem[] }[] = [
       {
         question: "What is MOLA Motion?",
         answer:
-          "MOLA Motion is a marketing production agency for B2B SaaS companies at two stages: founders with 1–2 customers building toward Series A, and scaleups at €1–10M ARR without a full marketing team. Every engagement starts with a paid audit that assesses positioning, ICP, messaging, GTM, website, and sales enablement, then recommends what to build first.",
+          "MOLA Motion is a marketing production agency for B2B SaaS companies at two stages: founders with 1–2 customers, and scaleups at €1–10M ARR without a full marketing team. Every engagement starts with a paid audit that assesses positioning, ICP, messaging, GTM, website, and sales enablement, then recommends what to build first.",
       },
       {
         question: "What does “marketing production agency” mean?",
